@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="test"></p>
+    <h1 class="app-name">
+      <span>spli</span>
+      <span>tter</span>
+    </h1>
+    <div class="app-container">
+      <div class="options-container">
+        <form>
+          <h3 class="label">Bill</h3>
+          <div class="input-wrapper">
+            <span>
+              <img src="./images/icon-dollar.svg" alt="" />
+            </span>
+            <input type="text" id="bill-amount" autocomplete="off" />
+          </div>
+          <h3 class="label">Select Tip %</h3>
+          <div class="btns-container">
+            <input type="button" value="5%" class="perc-btn" />
+            <input type="button" value="10%" class="perc-btn" />
+            <input type="button" value="15%" class="perc-btn" />
+            <input type="button" value="25%" class="perc-btn" />
+            <input type="button" value="50%" class="perc-btn" />
+            <input
+              type="number"
+              id="custom-perc"
+              class="perc-btn"
+              placeholder="Custom"
+            />
+          </div>
+          <div class="label-container">
+            <h3 class="label">Number of People</h3>
+            <h3 class="label warning-text warning">Can't be zero</h3>
+          </div>
+          <div class="input-wrapper">
+            <span>
+              <img src="./images/icon-person.svg" alt="" />
+            </span>
+            <input type="text" id="people-amount" autocomplete="off" />
+          </div>
+          <button type="submit" class="submit-btn">Calculate Tip</button>
+        </form>
+      </div>
+      <div class="info-container">
+        <div class="info-wrapper">
+          <div class="info-section">
+            <div class="title">
+              <h4 class="info-title">Bill Amount</h4>
+            </div>
+            <h2 class="bill-total amount">$0.00</h2>
+          </div>
+          <div class="info-section">
+            <div class="title">
+              <h4 class="info-title">Total Tip</h4>
+            </div>
+            <h2 class="tip-amount amount">$0.00</h2>
+          </div>
+          <div class="info-section">
+            <div class="title">
+              <h4 class="info-title">Tip Amount</h4>
+              <p>/ person</p>
+            </div>
+            <h2 class="tip-person amount">$0.00</h2>
+          </div>
+          <div class="info-section">
+            <div class="title">
+              <h4 class="info-title">Total</h4>
+              <p>/ person</p>
+            </div>
+            <h2 class="total-person amount">$0.00</h2>
+          </div>
+        </div>
+        <button class="reset-btn">RESET</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

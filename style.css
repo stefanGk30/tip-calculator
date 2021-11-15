@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(185, 41%, 84%);
+  padding: 1rem;
+  /* font-size: 1.5rem; */
+}
+/* =========================================== */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+  text-align: right;
+}
+/* ========================================== */
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.app-container {
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+  background: white;
+  display: flex;
+  margin-top: 5rem;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.app-container > div {
+  flex: 1;
+}
+
+.app-name span {
+  display: block;
+  text-transform: uppercase;
+  color: hsl(186, 14%, 43%);
+  letter-spacing: 10px;
+  line-height: 1.2;
+}
+
+.options-container {
+  padding: 1rem;
+}
+
+.label {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+#bill-amount,
+#people-amount {
+  text-align: right;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: 4px solid transparent;
+  background: hsl(180, 30%, 92%);
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: hsl(183, 100%, 15%);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.input-wrapper span {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40%;
+}
+
+.btns-container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.perc-btn {
+  font-family: 'Space Mono', monospace;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  flex: 0 0 calc(33% - 1rem);
+  border: none;
+  color: white;
+  background: hsl(183, 100%, 15%);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.perc-btn:hover,
+button {
+  cursor: pointer;
+}
+.perc-btn.active {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+#custom-perc {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  background: hsl(180, 30%, 92%);
+  color: hsl(183, 100%, 15%);
+}
+
+#custom-perc:hover {
+  cursor: initial;
+}
+
+/*  ---------------------------------------------------------- */
+#people-amount.warning-input,
+#bill-amount.warning-input {
+  border: 4px solid brown;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.warning-text {
+  color: brown;
+  text-decoration: underline;
+}
+.warning {
+  display: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  color: white;
+  font-family: 'space mono', monospace;
+  text-transform: uppercase;
+}
+
+.info-container {
+  padding: 1rem;
+  border-radius: 20px;
+  background: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info-title {
+  color: hsl(180, 30%, 92%);
+  font-weight: lighter;
+}
+.title p {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+.amount {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background: hsl(172, 67%, 45%);
+  border-radius: 5px;
+  color: white;
+  font-family: 'space mono', monospace;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 835px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  .app-container {
+    margin-top: 1rem;
+  }
+  .info-title {
+    font-size: 0.8rem;
+  }
+  .amount {
+    font-size: 1.5rem;
+  }
+}
