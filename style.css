@@ -29,6 +29,10 @@ input[type='number'] {
   -moz-appearance: textfield;
   text-align: right;
 }
+
+input[type='submit'] {
+  -webkit-appearance: none;
+}
 /* ========================================== */
 
 img {
