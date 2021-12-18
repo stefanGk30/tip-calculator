@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   background: hsl(185, 41%, 84%);
   padding: 1rem;
-  /* font-size: 1.5rem; */
 }
 /* =========================================== */
 /* Chrome, Safari, Edge, Opera */
@@ -30,9 +29,6 @@ input[type='number'] {
   text-align: right;
 }
 
-input[type='submit'] {
-  -webkit-appearance: none;
-}
 /* ========================================== */
 
 img {

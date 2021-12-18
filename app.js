@@ -79,6 +79,7 @@ function resetAll() {
   tipAmount.textContent = '$0.00';
   totalPerson.textContent = '$0.00';
   tipPerson.textContent = '$0.00';
+  billTotal.textContent = `$0.00`;
 }
 
 function check(input) {
